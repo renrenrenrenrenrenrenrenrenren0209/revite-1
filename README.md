@@ -40,6 +40,10 @@ renderの場合は[render.yaml](render.yaml)内の`name`を変更します。
 
 vercelの場合はメニューから変更します。(上級者向け)
 
+<details>
+
+<summary>その他</summary>
+
 # タブレット難民の皆様のために
 
 ...このreviteを作りました。
@@ -81,3 +85,5 @@ JF6DEUは頑張ってこのプロジェクトを存続していく方針です�
 編集権限は信頼している人にしか渡しません。
 
 ご了承ください。
+
+</details>
