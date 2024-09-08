@@ -1,8 +1,11 @@
 <!DOCTYPE HTML>
 <html lang="ja">
   <head>
-    <meta charset="UTF-8">
-	<meta name="coverage" content="ja">	
+	<script>
+		var pass = ""; //ここに自分のパスを記入、なかったら空のままで
+	</script>
+	<meta charset="UTF-8">
+	<meta name="coverage" content="ja">
 	<meta name="keywords" lang="ja" content="めんどくさい、サイト、見やすくない" />
 	<meta name="description" lang="ja" content="めんどくさいモダン的な何かを作ってみました。ソースコードは見やすくないです。" />
 	<title>Hello!</title>
@@ -257,13 +260,21 @@
 						var q = (di(gw).value) ? true : false;
 						if (q){
 							var sp = "";
-							switch(await checkers(di(gw).value)){
-								case true:
+							if (pass != ""){
+								if (di(gw).value == pass){
 									sp = "p";
-									break;
-								default:
+								} else {
 									sp = "w";
-									break;
+								}
+							} else {
+								switch(await checkers(di(gw).value)){
+									case true:
+										sp = "p";
+										break;
+									default:
+										sp = "w";
+										break;
+								}
 							}
 							if (sp == "p"){
 								var c = new Date();
